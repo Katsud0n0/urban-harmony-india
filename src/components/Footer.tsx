@@ -22,7 +22,7 @@ const Footer = () => {
                 <path d="M12 13v8"/>
                 <path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/>
               </svg>
-              <span className="font-bold text-primary">UrbanHarmony</span>
+              <span className="font-bold text-primary">JD</span>
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               Facilitating seamless interdepartmental cooperation in Indian cities
@@ -72,14 +72,14 @@ const Footer = () => {
               <p>Ministry of Urban Development</p>
               <p>Nirman Bhawan, New Delhi</p>
               <p>India - 110001</p>
-              <p className="mt-2">support@urbanharmony.gov.in</p>
+              <p className="mt-2">support@jd.gov.in</p>
               <p>+91 11 2306 2277</p>
             </address>
           </div>
         </div>
         
         <div className="mt-8 border-t pt-4 text-center text-sm text-muted-foreground">
-          <p>© 2025 UrbanHarmony. All rights reserved.</p>
+          <p>© 2025 JD. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -47,7 +47,7 @@ const Header = () => {
   );
 
   return (
-    <header className="border-b bg-background">
+    <header className="border-b bg-background/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
@@ -65,7 +65,7 @@ const Header = () => {
               <path d="M12 13v8"/>
               <path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/>
             </svg>
-            <span className="text-xl font-bold text-primary">UrbanHarmony</span>
+            <span className="text-xl font-bold text-primary">JD</span>
           </div>
           
           {!isMobile && <NavLinks />}

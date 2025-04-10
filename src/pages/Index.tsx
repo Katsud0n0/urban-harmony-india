@@ -15,11 +15,11 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       
-      <main className="flex-1 py-8">
+      <main className="flex-1 py-8 city-pattern">
         <div className="container">
           <div className="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-bold mb-2">City Administration Dashboard</h1>
+              <h1 className="text-3xl font-bold mb-2 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">City Administration Dashboard</h1>
               <p className="text-muted-foreground">
                 Interdepartmental collaboration platform for seamless city management
               </p>
@@ -28,15 +28,15 @@ const Index = () => {
             <CitySelector selectedCity={selectedCity} onChange={setSelectedCity} />
           </div>
           
-          <div className="mb-8">
+          <div className="mb-8 animate-fade-in">
             <DashboardStats />
           </div>
           
-          <div className="mb-8">
+          <div className="mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <ProjectsOverview />
           </div>
           
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-3 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <div className="md:col-span-2">
               <RecentAnnouncements />
             </div>

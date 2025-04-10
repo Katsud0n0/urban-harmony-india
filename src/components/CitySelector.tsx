@@ -8,6 +8,7 @@ import {
   SelectValue 
 } from "@/components/ui/select";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { MapPin } from "lucide-react";
 
 interface CitySelectorProps {
   onChange: (city: string) => void;
@@ -39,10 +40,13 @@ const CitySelector: React.FC<CitySelectorProps> = ({ onChange, selectedCity }) =
   ];
 
   return (
-    <div className="flex items-center gap-3">
-      <span className="text-sm font-medium">City:</span>
+    <div className="flex items-center gap-3 bg-white/80 backdrop-blur-sm rounded-lg p-2 shadow-sm border">
+      <span className="text-sm font-medium flex items-center">
+        <MapPin className="h-4 w-4 mr-1 text-urban-teal" />
+        City:
+      </span>
       <Select value={selectedCity} onValueChange={onChange}>
-        <SelectTrigger className="w-[180px]">
+        <SelectTrigger className="w-[180px] border-0 shadow-none focus:ring-0">
           <SelectValue placeholder="Select city" />
         </SelectTrigger>
         <SelectContent>

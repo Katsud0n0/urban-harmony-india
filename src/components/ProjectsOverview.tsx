@@ -19,14 +19,15 @@ const ProjectsOverview = () => {
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-semibold">Active Projects</h2>
-        <Button variant="outline" size="sm" onClick={() => navigate("/projects")}>
-          View All <ArrowRight className="ml-1 h-4 w-4" />
+        <h2 className="text-xl font-semibold text-primary">Active Projects</h2>
+        <Button variant="outline" size="sm" onClick={() => navigate("/projects")} className="gap-1 group">
+          View All <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
         </Button>
       </div>
       
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <Card className="dashboard-card">
+        <Card className="dashboard-card border overflow-hidden">
+          <div className="bg-gradient-to-r from-urban-teal/10 to-urban-teal/5 p-0.5"></div>
           <CardHeader className="pb-3">
             <div className="flex justify-between items-center">
               <Badge className="bg-urban-teal hover:bg-urban-teal/90 text-white">Infrastructure</Badge>
@@ -69,11 +70,12 @@ const ProjectsOverview = () => {
             </div>
           </CardContent>
           <CardFooter>
-            <Button className="w-full bg-primary text-primary-foreground">View Details</Button>
+            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">View Details</Button>
           </CardFooter>
         </Card>
         
-        <Card className="dashboard-card">
+        <Card className="dashboard-card border overflow-hidden">
+          <div className="bg-gradient-to-r from-green-500/10 to-green-500/5 p-0.5"></div>
           <CardHeader className="pb-3">
             <div className="flex justify-between items-center">
               <Badge className="bg-green-600 hover:bg-green-600/90 text-white">Environmental</Badge>
@@ -116,11 +118,12 @@ const ProjectsOverview = () => {
             </div>
           </CardContent>
           <CardFooter>
-            <Button className="w-full bg-primary text-primary-foreground">View Details</Button>
+            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">View Details</Button>
           </CardFooter>
         </Card>
         
-        <Card className="dashboard-card">
+        <Card className="dashboard-card border overflow-hidden">
+          <div className="bg-gradient-to-r from-blue-500/10 to-blue-500/5 p-0.5"></div>
           <CardHeader className="pb-3">
             <div className="flex justify-between items-center">
               <Badge className="bg-blue-600 hover:bg-blue-600/90 text-white">Public Services</Badge>
@@ -163,7 +166,7 @@ const ProjectsOverview = () => {
             </div>
           </CardContent>
           <CardFooter>
-            <Button className="w-full bg-primary text-primary-foreground">View Details</Button>
+            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">View Details</Button>
           </CardFooter>
         </Card>
       </div>

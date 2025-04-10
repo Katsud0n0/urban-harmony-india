@@ -6,7 +6,7 @@ import { Progress } from "@/components/ui/progress";
 const DashboardStats = () => {
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-      <Card className="dashboard-card">
+      <Card className="dashboard-card overflow-hidden border-t-4 border-t-urban-teal">
         <CardHeader className="pb-2">
           <CardTitle className="text-sm font-medium">Active Projects</CardTitle>
         </CardHeader>
@@ -28,7 +28,7 @@ const DashboardStats = () => {
         </CardContent>
       </Card>
       
-      <Card className="dashboard-card">
+      <Card className="dashboard-card overflow-hidden border-t-4 border-t-urban-orange">
         <CardHeader className="pb-2">
           <CardTitle className="text-sm font-medium">Pending Approvals</CardTitle>
         </CardHeader>
@@ -57,7 +57,7 @@ const DashboardStats = () => {
         </CardContent>
       </Card>
       
-      <Card className="dashboard-card">
+      <Card className="dashboard-card overflow-hidden border-t-4 border-t-urban-red">
         <CardHeader className="pb-2">
           <CardTitle className="text-sm font-medium">Open Issues</CardTitle>
         </CardHeader>
@@ -86,7 +86,7 @@ const DashboardStats = () => {
         </CardContent>
       </Card>
       
-      <Card className="dashboard-card">
+      <Card className="dashboard-card overflow-hidden border-t-4 border-t-primary">
         <CardHeader className="pb-2">
           <CardTitle className="text-sm font-medium">Upcoming Meetings</CardTitle>
         </CardHeader>
@@ -123,7 +123,7 @@ const DashboardStats = () => {
         </CardContent>
       </Card>
       
-      <Card className="dashboard-card">
+      <Card className="dashboard-card overflow-hidden border-t-4 border-t-secondary">
         <CardHeader className="pb-2">
           <CardTitle className="text-sm font-medium">Departments Engaged</CardTitle>
         </CardHeader>
@@ -145,7 +145,7 @@ const DashboardStats = () => {
         </CardContent>
       </Card>
       
-      <Card className="dashboard-card">
+      <Card className="dashboard-card overflow-hidden border-t-4 border-t-green-600">
         <CardHeader className="pb-2">
           <CardTitle className="text-sm font-medium">Completed Projects</CardTitle>
         </CardHeader>
